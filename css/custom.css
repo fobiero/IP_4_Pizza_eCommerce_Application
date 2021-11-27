@@ -26,7 +26,8 @@ li {
 }
 
 .hero {
-    background-image: url(../assets/banner-3.jpg);
+    background-color: rgba(0, 0, 0, .5);
+    background-image: url(../assets/ban-3.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -52,13 +53,37 @@ li {
 }
 
 .navLinks ul li a {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #fff;
     font-weight: 300;
+    letter-spacing: .2rem;
     text-transform: capitalize;
     /* display: inline-block; */
 }
 
+.social i {
+    padding: 0 .7rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
 .main_content {
-    padding: 10rem 5rem;
+    padding: 8rem 5rem;
+}
+
+.titles {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    letter-spacing: .3rem;
+}
+
+.titles span {
+    font-weight: bolder;
+}
+
+.p_descr {
+    font-weight: lighter;
+    font-size: 1.5rem;
 }
