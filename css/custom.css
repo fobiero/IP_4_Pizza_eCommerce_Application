@@ -8,8 +8,57 @@
 
 /* custom default styles  */
 
-:root {}
+:root {
+    --box_shadow: box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    --pri_color: ;
+    --text-color: ;
+    --sec_color: ;
+}
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.hero {
+    background-image: url(../assets/banner-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    padding: 2rem 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navLinks ul {
+    padding: 0 1rem;
+}
+
+.navLinks ul li {
+    padding: 0 1rem;
+    display: inline-block;
+}
+
+.navLinks ul li a {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 300;
+    text-transform: capitalize;
+    /* display: inline-block; */
+}
+
+.main_content {
+    padding: 10rem 5rem;
 }
