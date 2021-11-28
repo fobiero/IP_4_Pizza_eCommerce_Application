@@ -27,7 +27,7 @@ li {
 
 .hero {
     background-color: rgba(0, 0, 0, .5);
-    background-image: url(../assets/ban-3.png);
+    background-image: url(../assets/banner-3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -38,9 +38,20 @@ li {
 .navbar {
     display: flex;
     width: 100%;
-    padding: 2rem 5rem;
+    padding: 1rem 5rem;
     align-items: center;
     justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo a {
+    color: #fff;
+}
+
+#era {
+    font-size: 2rem;
+    letter-spacing: .4rem;
+    margin-left: .5rem;
 }
 
 .navLinks ul {
@@ -68,7 +79,7 @@ li {
 }
 
 .main_content {
-    padding: 8rem 5rem;
+    padding: 10rem 5rem;
 }
 
 .titles {
@@ -86,4 +97,13 @@ li {
 .p_descr {
     font-weight: lighter;
     font-size: 1.5rem;
+}
+
+.make_order {
+    border: none;
+    padding: 1rem 4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin-top: 3rem;
+    font-weight: 400;
 }
