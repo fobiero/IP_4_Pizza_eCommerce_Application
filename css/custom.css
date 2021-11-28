@@ -156,3 +156,19 @@ input::placeholder {
     margin-top: 2.8rem;
     padding: .5rem .8rem;
 }
+
+.checkOut {
+    padding: 2rem;
+    border: 1px solid #eee;
+}
+
+.checkOut h3 {
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.total-checkout {
+    display: none;
+}
