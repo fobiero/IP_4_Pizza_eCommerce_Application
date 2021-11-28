@@ -44,7 +44,7 @@
             <!-- </div> -->
             <!-- </div> -->
         </div>
-        <div class="main_content" data-aos="fade-right">
+        <div class="container main_content" data-aos="fade-right">
             <!-- <div class="container"> -->
             <h1 class="titles">welcome to <br> <span>pizera restaurant</span></h1>
             <p class="p_descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Assumenda doloribus, tenetur quasi cupiditate dolorem dolorum.</p>
@@ -61,8 +61,9 @@
                         <div class="row">
                             <div class="col-md-4 col-sm-12">
                                 <div class="flavors">
-                                    <label>Choose pizza Flavour</label>
-                                    <select class="custom-select custom-select-md mb-3 flavour">
+                                    <label>Choose pizza Flavour</label> <br>
+                                    <select class="flavour">
+                                        <option value="c_flavour"> choose flavour</option>
                                         <option value="bbq">BBQ Steak</option>
                                         <option value="boerewors">Boerewors</option>
                                         <option value="hawaiian">Hawaiian</option>
@@ -74,56 +75,59 @@
                                     </select>
                                 </div>
                                 <div class="piza-size">
-                                    <label>Choose your preferred Size</label>
-                                    <select class="custom-select custom-select-md mb-3" id="size">
-                                        <option value="regular">Regular</option>
-                                        <option value="medium">Medium</option>
-                                        <option value="large">Large</option>
+                                    <label>Choose your preferred Size</label> <br>
+                                    <select class="size id=" size ">
+                                        <option value="regular ">choose size</option>
+                                        <option value="regular ">Regular</option>
+                                        <option value="medium ">Medium</option>
+                                        <option value="large ">Large</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-12">
+                            <div class="col-md-4 col-sm-12 ">
                                 <!-- select crust  -->
-                                <div class="crust">
-                                    <label>Choose Your favourite Crust</label>
-                                    <select class="custom-select custom-select-md mb-3" id="crust">
-                                        <option value="thin">Normal Crust @ Ksh. 100</option>
-                                        <option value="thick">Thick Crust @ Ksh. 150</option>
+                                <div class="crust ">
+                                    <label>Choose Your favourite Crust</label>  <br>
+                                    <select id="crust ">
+                                        <option value="thin ">Choose crust</option>
+                                        <option value="thin ">Normal Crust @ Ksh. 100</option>
+                                        <option value="thick ">Thick Crust @ Ksh. 150</option>
                                     </select>
                                 </div>
-                                <div class="toppins">
-                                    <label>Choose Your favourite Toppings</label>
-                                    <select class="custom-select custom-select-md mb-3" id="toppings" required>
-                                    <option value="tomato">Tomato @ sh. 80</option>
-                                    <option value="onions">Onions @ sh. 80</option>
-                                    <option value="mushroom">Mushroom @ sh. 80</option>
-                                    <option value="greenpepper">Green Pepper @ sh. 80</option>
-                                    <option value="beef">Beef Peperoni @ sh. 170</option>
-                                    <option value="chicken">Periperi Chicken @ sh. 170</option>
+                                <div class="toppins ">
+                                    <label>Choose Toppings</label>  <br>
+                                    <select id="toppings ">
+                                        <option value="tomato ">Choose toppings</option>
+                                        <option value="tomato ">Tomato @ sh. 80</option>
+                                        <option value="onions ">Onions @ sh. 80</option>
+                                        <option value="mushroom ">Mushroom @ sh. 80</option>
+                                        <option value="greenpepper ">Green Pepper @ sh. 80</option>
+                                        <option value="beef ">Beef Peperoni @ sh. 170</option>
+                                        <option value="chicken ">Periperi Chicken @ sh. 170</option>
                                 </select>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-12">
-                                <div class="piza_number">
-                                    <label for="number">Number of Pizza's</label>
-                                    <input type="number" id="number" placeholder="Number of pizzas" min="1" required>
+                            <div class="col-md-4 col-sm-12 ">
+                                <div class="piza_number ">
+                                    <label for="number ">Number of Pizza's</label>
+                                    <input type="number " id="number " placeholder="Number of pizzas ">
                                 </div>
-                                <button class="submit">checkout</button>
+                                <button class="submit ">checkout</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <!-- <h3 class="h_3_title">checkout</h3> -->
+                <div class="col-md-3 ">
+                    <!-- <h3 class="h_3_title ">checkout</h3> -->
                 </div>
             </div>
         </div>
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="./js/script.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+    <script src="./js/script.js "></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
     <script>
         AOS.init();
     </script>

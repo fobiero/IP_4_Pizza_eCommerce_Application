@@ -10,9 +10,7 @@
 
 :root {
     --box_shadow: box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    --pri_color: ;
-    --text-color: ;
-    --sec_color: ;
+    --pri_color: #68B846;
 }
 
 body {
@@ -80,7 +78,7 @@ li {
 }
 
 .main_content {
-    padding: 10rem 5rem;
+    padding: 10rem 0;
 }
 
 .titles {
@@ -107,4 +105,54 @@ li {
     letter-spacing: .2rem;
     margin-top: 3rem;
     font-weight: 400;
+}
+
+
+/* ORDERS   */
+
+.order {
+    padding: 4rem 0;
+}
+
+label {
+    padding: .6rem 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+select {
+    margin: 0 0 1rem 0;
+    width: 100%;
+    outline: none;
+    padding: .7rem 1rem;
+}
+
+option:hover {
+    background-color: none;
+    color: #000;
+}
+
+input {
+    color: inherit;
+    outline: none;
+    width: 100%;
+    margin: 0 0 1rem 0;
+    font-weight: 400;
+    padding: .5rem 1rem;
+}
+
+input::placeholder {
+    color: inherit;
+}
+
+.submit {
+    font-size: 1.1rem;
+    border: none;
+    background-color: var(--pri_color);
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin-top: 2.8rem;
+    padding: .5rem .8rem;
 }
