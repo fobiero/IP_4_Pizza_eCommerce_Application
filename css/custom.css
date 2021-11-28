@@ -172,3 +172,19 @@ input::placeholder {
 .total-checkout {
     display: none;
 }
+
+#subscrbe {
+    width: 40%;
+}
+
+footer {
+    padding: 1rem 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    align-items: center;
+}
+
+footer i {
+    margin: 0 1rem;
+}
