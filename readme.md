@@ -27,7 +27,7 @@ https://github.com/fobiero/IP_4_Pizza_eCommerce_Application
 <br/>
 
 ## Technologies Used.
-The development build has used different technologies .i.e JavaScript, HTML5, CSS3, Bootstrap, font-awesome, Markdown. https://fobiero.github.io/IP_3_Delani_Studio/
+The development build has used different technologies .i.e JavaScript, HTML5, CSS3, Bootstrap, font-awesome, Markdown. https://fobiero.github.io/IP_4_Pizza_eCommerce_Application/
 
 <br/>
 
