@@ -8,6 +8,8 @@ $(() => {
         const pToppins = $('.p_toppins').val();
         const pNumber = $('.p_numb').val();
 
+        // alert(pFlavors);
+
         let calOrder = (flavour, size, crust, toppins, number, total) => {
             return { flavour, size, crust, toppins, number, total };
         };
@@ -82,7 +84,7 @@ $(() => {
             case pToppins == 'beef':
                 totalPrice = totalPrice + 210;
                 break;
-        }
+        };
         const order = calOrder()
         console.log(order);
     })
