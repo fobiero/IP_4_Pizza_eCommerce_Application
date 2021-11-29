@@ -8,21 +8,15 @@ $(() => {
         const pToppins = $('.p_toppins').val();
         const pNumber = $('.p_numb').val();
 
-        class CalcOrder {
-            constructor(flavour, size, crust, toppins, number, total) {
-                this.flavour = flavour;
-                this.size = size;
-                this.crust = crust;
-                this.toppins = toppins;
-                this.number = number;
-                this.total = total;
-            }
-        }
+        let calOrder = (flavour, size, crust, toppins, number, total) => {
+            return { flavour, size, crust, toppins, number, total };
+        };
+
         let price, totalPrice;
         switch (pFlavors) {
             case flavour = 'chicken':
                 switch (pSize) {
-                    case pSize = 'regular':
+                    case pSize == 'regular':
                         price = 450;
                         if (pCrust == 'thin') {
                             totalPrice = (price * pNumber) + 100;
@@ -30,7 +24,7 @@ $(() => {
                             totalPrice = (price * pNumber) + 150;
                         }
                         break;
-                    case pSize = 'medium':
+                    case pSize == 'medium':
                         price = 750;
                         if (pCrust == 'thin') {
                             totalPrice = (price * pNumber) + 100;
@@ -38,7 +32,7 @@ $(() => {
                             totalPrice = (price * pNumber) + 150;
                         }
                         break;
-                    case pSize = 'large':
+                    case pSize == 'large':
                         price = 1600;
                         if (pCrust == 'thin') {
                             totalPrice = (price * pNumber) + 100;
@@ -49,8 +43,8 @@ $(() => {
                 }
                 break;
             case flavour = 'veges':
-                switch (size) {
-                    case pSize = 'regular':
+                switch (pSize) {
+                    case pSize == 'regular':
                         price = 350;
                         if (pCrust == 'thin') {
                             totalPrice = (price * pNumber) + 100;
@@ -58,7 +52,7 @@ $(() => {
                             totalPrice = (price * pNumber) + 150;
                         }
                         break;
-                    case size = 'medium':
+                    case pSize == 'medium':
                         price = 650;
                         if (pCrust == 'thin') {
                             totalPrice = (price * pNumber) + 100;
@@ -66,7 +60,7 @@ $(() => {
                             totalPrice = (price * pNumber) + 150;
                         }
                         break;
-                    case size = 'large':
+                    case pSize == 'large':
                         price = 1400;
                         if (pCrust == 'thin') {
                             totalPrice = (price * pNumber) + 100;
@@ -79,17 +73,17 @@ $(() => {
         }
         // break;
         switch (pToppins) {
-            case toppins = 'tomato':
+            case pToppins == 'tomato':
                 totalPrice = totalPrice + 75;
                 break;
-            case (toppins) = 'mushroom':
+            case (pToppins) == 'mushroom':
                 totalPrice = totalPrice + 90;
                 break;
-            case toppins = 'beef':
+            case pToppins == 'beef':
                 totalPrice = totalPrice + 210;
                 break;
         }
-        const customer = new CalcOrder();
-        console.log(customer);
+        const order = calOrder()
+        console.log(order);
     })
 })
