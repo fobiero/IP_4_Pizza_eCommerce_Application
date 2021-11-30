@@ -5,8 +5,7 @@ $(document).ready(() => {
         const pCrust = parseInt($('.pcrust').val());
         const pToppins = parseInt($('.p_toppins').val());
         const pNum = parseInt($('.p_numb').val());
-        const gPrice = parseInt($('.grand_total').val());
-
+        // const gPrice = parseInt($('.grand_total').val());
         if (flavour == '') {
             alert('choose flavour');
         } else if (pSize == '') {
@@ -16,14 +15,30 @@ $(document).ready(() => {
         } else if (pToppins == '') {
             alert('pick toppins')
         } else if (pNum == '') {
-            alert('Please pick quantity')
+            alert('Please enter quantity')
         } else {
-            let total, grandCheckout;
-            total = (flavour + pSize + pCrust + pToppins) * pNum;
-            grandCheckout = total + gPrice;
-            alert(total);
-            alert(grandCheckout);
+            const total = (flavour + pSize + pCrust + pToppins) * pNum;
+            $('.totalCheck').text(total);
+            localStorage.setItem("total", total);
         }
 
+    })
+
+    $('.grand_total').click(() => {
+        const grandName = $('.delName').val();
+        const grandTot = $('.delLoc').val();
+
+        let deliveryCost = 0;
+        if (grandName == '' && grandTot == '') {
+            deliveryCost = 0;
+        } else {
+            deliveryCost = 200;
+        }
+
+        const total = parseInt(localStorage.getItem("total"));
+        const grandprice = total + deliveryCost;
+        $('.grandCheck').text(grandprice);
+
+        alert(`${grandName} : Thank You for shopping with us. We will contact you!`);
     })
 })
