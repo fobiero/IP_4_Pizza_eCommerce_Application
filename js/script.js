@@ -39,6 +39,7 @@ $(document).ready(() => {
         const grandprice = total + deliveryCost;
         $('.grandCheck').text(grandprice);
 
-        alert(`${grandName} : Thank You for shopping with us. We will contact you!`);
+
+        alert(` Thank you ${grandName}, We will call you on ${grandName} and your order will be delivered to your location. Check out the total checkOut Price`);
     })
 })
