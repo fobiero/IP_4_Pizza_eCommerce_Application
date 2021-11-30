@@ -5,6 +5,7 @@ $(document).ready(() => {
         const pCrust = parseInt($('.pcrust').val());
         const pToppins = parseInt($('.p_toppins').val());
         const pNum = parseInt($('.p_numb').val());
+        const gPrice = parseInt($('.grand_total').val());
 
         if (flavour == '') {
             alert('choose flavour');
@@ -17,8 +18,11 @@ $(document).ready(() => {
         } else if (pNum == '') {
             alert('Please pick quantity')
         } else {
-            const total = (flavour + pSize + pCrust + pToppins) * pNum;
-            alert(total)
+            let total, grandCheckout;
+            total = (flavour + pSize + pCrust + pToppins) * pNum;
+            grandCheckout = total + gPrice;
+            alert(total);
+            alert(grandCheckout);
         }
 
     })

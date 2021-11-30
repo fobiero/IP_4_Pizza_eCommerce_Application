@@ -170,7 +170,7 @@ input::placeholder {
 }
 
 .total-charge {
-    display: none;
+    /* display: none; */
 }
 
 #subscrbe {
