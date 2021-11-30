@@ -10,13 +10,9 @@ $(() => {
 
         // alert(pFlavors);
 
-        let calOrder = (flavour, size, crust, toppins, number, total) => {
-            return { flavour, size, crust, toppins, number, total };
-        };
-
         let price, totalPrice;
         switch (pFlavors) {
-            case flavour = 'chicken':
+            case flavour = "chicken":
                 switch (pSize) {
                     case pSize == 'regular':
                         price = 450;
@@ -44,7 +40,7 @@ $(() => {
                         break;
                 }
                 break;
-            case flavour = 'veges':
+            case flavour == 'veges':
                 switch (pSize) {
                     case pSize == 'regular':
                         price = 350;
@@ -85,7 +81,19 @@ $(() => {
                 totalPrice = totalPrice + 210;
                 break;
         };
-        const order = calOrder()
-        console.log(order);
-    })
-})
+
+        // make a new order 
+        let calOrder = (totalPrice) => {
+            return { totalPrice };
+        };
+
+        let order = calOrder()
+            // console.log(order);
+        $('.total-charge').show(order)
+    });
+    // add delivery & checkout price 
+    $('#grand-total').click(() => {
+        const customerName = $('#del_name').val();
+        alert(`${customerName} : Thanks You!`);
+    });
+});
