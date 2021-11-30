@@ -1,99 +1,25 @@
-// get values from the user 
-
-$(() => {
+$(document).ready(() => {
     $('.submit').click(() => {
-        const pFlavors = $('.flavour').val();
-        const pSize = $('.size').val();
-        const pCrust = $('.pcrust').val();
-        const pToppins = $('.p_toppins').val();
-        const pNumber = $('.p_numb').val();
+        const flavour = parseInt($('.flavour').val());
+        const pSize = parseInt($('.size').val());
+        const pCrust = parseInt($('.pcrust').val());
+        const pToppins = parseInt($('.p_toppins').val());
+        const pNum = parseInt($('.p_numb').val());
 
-        // alert(pFlavors);
-
-        let price, totalPrice;
-        switch (pFlavors) {
-            case flavour = "chicken":
-                switch (pSize) {
-                    case pSize == 'regular':
-                        price = 450;
-                        if (pCrust == 'thin') {
-                            totalPrice = (price * pNumber) + 100;
-                        } else if (pCrust == 'thick') {
-                            totalPrice = (price * pNumber) + 150;
-                        }
-                        break;
-                    case pSize == 'medium':
-                        price = 750;
-                        if (pCrust == 'thin') {
-                            totalPrice = (price * pNumber) + 100;
-                        } else {
-                            totalPrice = (price * pNumber) + 150;
-                        }
-                        break;
-                    case pSize == 'large':
-                        price = 1600;
-                        if (pCrust == 'thin') {
-                            totalPrice = (price * pNumber) + 100;
-                        } else {
-                            totalPrice = (price * pNumber) + 150;
-                        }
-                        break;
-                }
-                break;
-            case flavour == 'veges':
-                switch (pSize) {
-                    case pSize == 'regular':
-                        price = 350;
-                        if (pCrust == 'thin') {
-                            totalPrice = (price * pNumber) + 100;
-                        } else if (pCrust == 'thick') {
-                            totalPrice = (price * pNumber) + 150;
-                        }
-                        break;
-                    case pSize == 'medium':
-                        price = 650;
-                        if (pCrust == 'thin') {
-                            totalPrice = (price * pNumber) + 100;
-                        } else {
-                            totalPrice = (price * pNumber) + 150;
-                        }
-                        break;
-                    case pSize == 'large':
-                        price = 1400;
-                        if (pCrust == 'thin') {
-                            totalPrice = (price * pNumber) + 100;
-                        } else {
-                            totalPrice = (price * pNumber) + 150;
-                        }
-                        break;
-                }
-                break;
+        if (flavour == '') {
+            alert('choose flavour');
+        } else if (pSize == '') {
+            alert('Pick pizza size');
+        } else if (pCrust == '') {
+            alert('choose crust')
+        } else if (pToppins == '') {
+            alert('pick toppins')
+        } else if (pNum == '') {
+            alert('Please pick quantity')
+        } else {
+            const total = (flavour + pSize + pCrust + pToppins) * pNum;
+            alert(total)
         }
-        // break;
-        switch (pToppins) {
-            case pToppins == 'tomato':
-                totalPrice = totalPrice + 75;
-                break;
-            case (pToppins) == 'mushroom':
-                totalPrice = totalPrice + 90;
-                break;
-            case pToppins == 'beef':
-                totalPrice = totalPrice + 210;
-                break;
-        };
 
-        // make a new order 
-        let calOrder = (totalPrice) => {
-            return { totalPrice };
-        };
-
-        let order = calOrder()
-            // console.log(order);
-        $('.total-charge').show(order)
-    });
-    // add delivery & checkout price 
-    $('#grand-total').click(() => {
-        const customerName = $('#del_name').val();
-        alert(`${customerName} : Thanks You!`);
-    });
-});
+    })
+})
