@@ -40,6 +40,6 @@ $(document).ready(() => {
         $('.grandCheck').text(grandprice);
 
 
-        alert(` Thank you ${grandName}, We will call you on ${grandName} and your order will be delivered to your location. Check out the total checkOut Price`);
+        alert(` Thank you! We will call you on ${grandName} and your order will be delivered to ${grandTot} . Check out the total checkOut Price`);
     })
 })
