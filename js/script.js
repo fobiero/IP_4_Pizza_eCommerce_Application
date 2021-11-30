@@ -21,7 +21,6 @@ $(document).ready(() => {
             $('.totalCheck').text(total);
             localStorage.setItem("total", total);
         }
-
     })
 
     $('.grand_total').click(() => {
@@ -34,11 +33,10 @@ $(document).ready(() => {
         } else {
             deliveryCost = 200;
         }
-        s
+
         const total = parseInt(localStorage.getItem("total"));
         const grandprice = total + deliveryCost;
         $('.grandCheck').text(grandprice);
-
 
         alert(` Thank you! We will call you on ${grandName} and your order will be delivered to ${grandTot} . Check out the total checkOut Price`);
     })
