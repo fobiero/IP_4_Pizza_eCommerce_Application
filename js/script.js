@@ -34,7 +34,7 @@ $(document).ready(() => {
         } else {
             deliveryCost = 200;
         }
-
+        s
         const total = parseInt(localStorage.getItem("total"));
         const grandprice = total + deliveryCost;
         $('.grandCheck').text(grandprice);
